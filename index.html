@@ -3,27 +3,38 @@
 <title>BRD4 in the heart: public data reanalysis for the Padmanabhan Lab | Artemis Biolabs</title>
 <meta name="description" content="Artemis Biolabs reanalysis of public heart data: BD1 vs BD2 in the pan-BET heart response, electrical genes, and the BRD4-GATA4 mitochondrial program in human heart failure.">
 <meta name="artemis-guide-endpoint" content="">
-<meta name="theme-color" content="#fbfaf6"><link rel="icon" href="assets/artemis_mark.svg"><link rel="stylesheet" href="css/portal.css">
+<meta name="theme-color" content="#fbfaf6"><link rel="icon" href="assets/artemis_mark.svg"><link rel="stylesheet" href="css/portal.css"><link rel="stylesheet" href="css/interactive.css"><link rel="stylesheet" href="css/walk.css">
 <link rel="stylesheet" href="premium/premium.css">
 <style>.heroviz img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;background:#fff;padding:14px} .finding figure img{background:#fff} .lk{width:100%;border-collapse:collapse;font-size:14px;background:#fff} .lk th,.lk td{border-bottom:1px solid var(--line);padding:7px 10px;text-align:left} .lk th{font-weight:600} .lkbar{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin:14px 0} .lkbar input{font:15px Inter,system-ui,sans-serif;padding:9px 12px;border:1px solid var(--line);border-radius:10px;min-width:260px} .dn{color:#D55E00;font-weight:600} .up{color:#0072B2;font-weight:600} .honest{font-size:14px;color:#5b554b;margin-top:8px} .dl a{margin-right:10px}</style>
-<script type="application/json" id="ap-config">{"lab": "padmanabhan", "unitWord": "comparison", "heroSel": ".hero .copy > *", "heroCountSel": ".hero .stats b", "countSel": ".stat b", "intro": {"status": "Loading 8 heart JQ1 comparisons, 375,118 heart nuclei and 366 human left ventricles", "kicker": "GEO GSE48110 \u00b7 GSE48111 \u00b7 GSE96560 \u00b7 GSE96561 \u00b7 GSE138089 \u00b7 GSE138209 \u00b7 GSE141910 \u00b7 CELLxGENE \u00b7 HERMES DCM GWAS", "title": "BRD4 in the heart", "meta": "BD1 vs BD2, electrical genes, the BRD4-GATA4 mitochondrial program and DCM genetics \u00b7 public data", "stats": [["8 of 8", "heart models move along the BD1 axis"], ["7 of 8", "models with lower GATA4 activity"], ["p = 0.75", "program change in DCM cardiomyocyte nuclei"], ["z = 7.97", "DCM genetic risk in cardiomyocytes"]], "preparedFor": "Prepared for <b>the Padmanabhan Lab</b>, UCSF"}}</script>
+<script type="application/json" id="ap-config">{"lab": "padmanabhan", "unitWord": "comparison", "heroSel": ".hero .copy > *", "heroCountSel": ".hero .stats b", "countSel": ".stat b", "intro": {"status": "Loading 8 heart JQ1 comparisons, 375,118 heart nuclei and 366 human left ventricles", "kicker": "Public GEO, CELLxGENE and GWAS data", "title": "BRD4 in the heart", "meta": "Six questions for Dr. P: BD1 vs BD2, GATA4, electrical genes, the BRD4 program in DCM and DCM genetics", "stats": [["8 of 8", "heart models move along the BD1 axis"], ["7 of 8", "models with lower GATA4 activity"], ["p = 0.75", "program change in DCM cardiomyocyte nuclei"], ["z = 7.97", "DCM genetic risk in cardiomyocytes"]], "preparedFor": "Prepared for <b>Dr. P</b>, Padmanabhan Lab, UCSF"}}</script>
 <script src="premium/premium.js"></script>
 <link rel="stylesheet" href="css/wf.css">
 </head><body data-portal="padmanabhan">
 <header class="top"><div class="in"><a class="brand" href="#top"><img src="assets/artemis_mark.svg" alt=""><span>Artemis Biolabs<small>Reanalysis portal</small></span></a>
-<nav><a href="#shared">All reports</a><a href="#question">Question</a><a href="#findings">Findings</a><a href="#explore">Gene lookup</a><a href="#workflow">Workflow</a><a href="#methods">Methods</a><a href="#next">Next steps</a></nav>
+<nav><a href="#walk">Overview</a><a href="#shared">All reports</a><a href="#question">Question</a><a href="#findings">Findings</a><a href="#genes">Explore genes</a><a href="#explore">Gene lookup</a><a href="#workflow">Workflow</a><a href="#methods">Methods</a><a href="#next">Next steps</a></nav>
 <a class="btn" href="https://calendar.app.google/Gcn7m6neU3P3ktQA8" target="_blank" rel="noopener">Book a call</a></div></header>
 <main id="top">
 <div class="grid-bg"><div class="wrap hero">
- <div class="copy"><span class="chapter">Prepared for the Padmanabhan Lab, UCSF</span>
+ <div class="copy"><span class="chapter">Prepared for Dr. P, Padmanabhan Lab, UCSF</span>
  <h1>Pan-BET drugs act like BD1 blockade in the heart, and the BRD4 mitochondrial program is a stable cardiomyocyte trait in human DCM</h1>
- <p class="lede">Our BRD4 work for your lab: an overview of the integration reports already shared with you, and a new public-data reanalysis built around your BRD4 program, with per-sample transcription factor and bromodomain footprints, single-nucleus statistics on 375,118 heart nuclei, deconvolution of 366 human hearts, and DCM genetics mapped to single cells.</p>
+ <p class="lede">Dr. P, here is our BRD4 work for your lab: an overview of the integration reports already shared with you, and a new public-data reanalysis built around your BRD4 program, with per-sample transcription factor and bromodomain footprints, single-nucleus statistics on 375,118 heart nuclei, deconvolution of 366 human hearts, and DCM genetics mapped to single cells.</p>
  <p class="for">Built by <b>Artemis Biolabs</b> from public GEO, CELLxGENE and GWAS data and your published 2020 Circulation supplement. No unpublished lab data appear on this page. Analysis for discussion; not peer reviewed.</p>
  <a class="btn" href="#shared">All reports</a> <a class="btn ghost" href="#findings">Public-data findings</a> <a class="btn ghost" href="report/Artemis_Biolabs_Padmanabhan_BRD4_public_reanalysis_v3.pdf" target="_blank" rel="noopener">Read the report (PDF)</a>
  <div class="stats"><div><b>8 of 8</b><span>heart models move along the BD1 axis</span></div><div><b>7 of 8</b><span>models with lower GATA4 activity</span></div><div><b>p = 0.75</b><span>program change in DCM cardiomyocyte nuclei</span></div><div><b>z = 7.97</b><span>DCM genetic risk in cardiomyocytes</span></div></div>
  </div>
  <div class="heroviz" id="heroviz"><img src="figs/fig4_single_nucleus.png" alt="Figure 4, drug2cell-style dot plot of BET and BRD4 program scores across every heart cell type"><div class="tag">Figure 4. Where BET drug signatures and the BRD4 program sit across 375,118 heart nuclei</div></div>
 </div></div>
+
+<section id="walk" class="walk"><div class="wrap">
+ <span class="chapter">Dr. P, the short version</span><h2>Six questions about BET proteins in the heart, answered with public data</h2>
+ <p class="lede2">Here is the whole reanalysis in one pass. The bars show how strongly each JQ1-treated heart sample matches BD1 versus BD2 blockade; the steps walk through each question and link to the genes behind the answer.</p>
+ <div class="wgrid">
+  <figure class="waxis"><div class="k">The BD1 axis</div><h3>Every heart comparison moves with BD1, not BD2</h3><div class="wsvg"></div>
+   <p class="pooled">Pooled BD1 g 10.7, up in 8 of 8; BD2 beyond BD1 g -0.25, p = 0.57.</p>
+   <figcaption>decoupleR footprints per comparison, BD1 (blue) and BD2 (orange) fitted jointly on 1,595 Gilan et al. 2020 targets; Hedges g, JQ1 versus vehicle.</figcaption></figure>
+  <div class="wsteps"><ol><li><span class="n">Question 1</span><p class="qq">Does each JQ1-treated heart sample look more like BD1 or BD2 blockade?</p><div class="aa"><div>BD1. All 8 comparisons move along the BD1 axis (pooled g 10.7), and BD2 adds nothing beyond BD1 (g -0.25, p = 0.57). <a href="#ix-f1">Explore the genes</a></div></div></li><li><span class="n">Question 2</span><p class="qq">Does BET inhibition lower GATA4 activity in heart cells?</p><div class="aa"><div>Yes, in 7 of 8 comparisons (pooled g -1.98, p = 5.4e-4), along with lower RELA, NFKB1 and TNF pathway activity in 8 of 8. <a href="#ix-f2">Explore the genes</a></div></div></li><li><span class="n">Question 3</span><p class="qq">Does it lower electrical genes in mature heart cells?</p><div class="aa"><div>Yes. Action potential genes fall (NES -1.75 to -2.08), with SCN5A and KCNH2 lower in 7 of 8 comparisons, while structure markers hold. <a href="#ix-f3">Explore the genes</a></div></div></li><li><span class="n">Question 4</span><p class="qq">Is the BRD4 program lost inside DCM cardiomyocytes?</p><div class="aa"><div>No. Across 68 donors the program does not change in cardiomyocyte nuclei (+0.05 SD, p = 0.75). <a href="#ix-f4">Explore the genes</a></div></div></li><li><span class="n">Question 5</span><p class="qq">Is it lost once the cell mix is removed?</p><div class="aa"><div>No. In deconvolved cardiomyocytes from 366 hearts it is slightly higher in DCM (+0.065, p = 8.2e-4). <a href="#ix-f5">Explore the genes</a></div></div></li><li><span class="n">Question 6</span><p class="qq">Do DCM risk genes point to BRD4-high cells?</p><div class="aa"><div>They point to cardiomyocytes (MC z 7.97), but within cardiomyocytes risk is slightly lower where the program is high (r -0.10, p = 0.014). <a href="#ix-f6">Explore the genes</a></div></div></li></ol><div class="wprog"><i></i></div><div class="wctl"><button type="button" class="wpause">Pause</button><span>Click any question to jump to it.</span></div></div>
+ </div>
+</div></section>
 
 <section id="shared" class="band"><div class="wrap">
  <span class="chapter">All reports</span><h2>Our BRD4 work with the Padmanabhan Lab</h2>
@@ -85,6 +96,71 @@
   <figure><img src="figs/fig8_summary_model.png" alt="Figure 8, summary model" loading="lazy"><figcaption>Figure 8. Summary model.</figcaption></figure></div>
 </div></section>
 
+<section class="band" id="genes"><div class="wrap">
+ <span class="chapter">Explore the genes</span><h2>The genes behind each answer</h2>
+ <p class="narrow">One interactive figure per question, built from the same public-data results as the figures above. Hover any point for its values and study, type a gene to highlight it, switch between comparisons, and sort or download the table below each figure. Drag to zoom; double-click to reset.</p>
+<div class="ix" id="ix-f1" data-fig="f1">
+ <span class="lab">Question 1</span><h3>Heart JQ1 responses track the BD1 reference more closely than the BD2 reference</h3><p class="q">Does each JQ1-treated heart sample look more like BD1 or BD2 blockade?</p>
+ <div class="ixctl"><label>Comparison<select class="csel" aria-label="Comparison"></select></label><label>Reference<span class="seg"><button type="button" class="on" data-v="BD1">BD1</button><button type="button" data-v="BD2">BD2</button></span></label><label>Find a gene<input class="gq" type="text" placeholder="e.g. SCN5A" aria-label="Find a gene" autocomplete="off" spellcheck="false"></label><button class="sbtn gbtn2" type="button">Highlight</button><button class="sbtn png" type="button">Download PNG</button><span class="msg" aria-live="polite"></span></div>
+ <div class="ixstats"></div>
+ <div class="ixleg"><span><i style="background:#0072B2"></i>BD1-selective genes</span><span><i style="background:#E69F00"></i>BD2-selective genes</span><span><i style="background:#4D4D4D"></i>both</span><span><i style="background:#BDBDBD"></i>other genes</span></div>
+ <div class="ixplot"><div class="ph">Interactive figure loads as you scroll</div></div>
+ <p class="take">Takeaway: in all 8 comparisons the heart response correlates more with the BD1 than the BD2 reference, and the decoupleR BD1 footprint rises 8 of 8 (pooled g 10.7) with no BD2 effect beyond BD1 (g -0.25, p = 0.57).</p>
+ <p class="legend">Each point is a gene measured in both the heart comparison and the Gilan et al. 2020 reference (GSE138209, GSE138089). x: mean log2FC with the BD1-selective (GSK778) or BD2-selective (GSK046) inhibitor in resting cells; y: log2FC with JQ1 versus vehicle in the chosen heart comparison (mouse and rat genes mapped one to one to human). Coloured genes fall significantly with only BD1, only BD2 or both inhibitors in the reference. Spearman rho and the bootstrap 95% CI of the difference use all shared genes. Labels: largest significant changes among coloured genes (adjusted p &lt; 0.05). Table: coloured genes; sort by any column.</p>
+ <div class="ixtbl"></div>
+</div>
+<div class="ix" id="ix-f2" data-fig="f2">
+ <span class="lab">Question 2</span><h3>JQ1 lowers GATA4 target activity in 7 of 8 heart comparisons</h3><p class="q">Does BET inhibition lower GATA4 activity in heart cells?</p>
+ <div class="ixctl"><label>Comparison<select class="csel" aria-label="Comparison"></select></label><label>Table shows<select class="fsel" aria-label="Table shows"></select></label><label>Find a gene<input class="gq" type="text" placeholder="e.g. SCN5A" aria-label="Find a gene" autocomplete="off" spellcheck="false"></label><button class="sbtn gbtn2" type="button">Highlight</button><button class="sbtn png" type="button">Download PNG</button><span class="msg" aria-live="polite"></span></div>
+ <div class="ixstats"></div>
+ <div class="ixleg"><span><i style="background:#D55E00"></i>GATA4-activated targets</span><span><i style="background:#56B4E9"></i>GATA4-repressed targets</span><span><i style="background:#BDBDBD"></i>other genes</span></div>
+ <div class="ixplot"><div class="ph">Interactive figure loads as you scroll</div></div>
+ <p class="take">Takeaway: GATA4 activity falls in 7 of 8 comparisons (pooled g -1.98, p = 5.4e-4); the volcano shows which CollecTRI targets carry the fall in each model.</p>
+ <p class="legend">Volcano of JQ1 versus vehicle for the chosen comparison (DESeq2 for RNA-seq, limma for microarrays; Benjamini-Hochberg adjusted p). GATA4 targets and their sign come from CollecTRI; activity is a decoupleR univariate linear model per sample, compared with a Welch test and summarised as Hedges g. Dashed line: adjusted p = 0.05. Labels: most significant GATA4 targets that do not overlap.</p>
+ <div class="ixtbl"></div>
+</div>
+<div class="ix" id="ix-f3" data-fig="f3">
+ <span class="lab">Question 3</span><h3>JQ1 lowers cardiac action potential genes, including SCN5A and KCNH2 in 7 of 8 comparisons</h3><p class="q">Does BET inhibition lower electrical genes in mature heart cells?</p>
+ <div class="ixctl"><label>Order genes<span class="seg"><button type="button" class="on" data-v="mean">By mean change</button><button type="button" data-v="alpha">A to Z</button></span></label><label>Table shows<select class="fsel" aria-label="Table shows"></select></label><label>Find a gene<input class="gq" type="text" placeholder="e.g. SCN5A" aria-label="Find a gene" autocomplete="off" spellcheck="false"></label><button class="sbtn gbtn2" type="button">Highlight</button><button class="sbtn png" type="button">Download PNG</button><span class="msg" aria-live="polite"></span></div>
+ <div class="ixstats"></div>
+ <div class="ixleg"><span><i class="sq" style="background:linear-gradient(90deg,#2166AC,#F7F7F7,#B2182B)"></i>log2FC, blue down, red up</span><span>* adjusted p &lt; 0.05</span></div>
+ <div class="ixplot tall"><div class="ph">Interactive figure loads as you scroll</div></div>
+ <p class="take">Takeaway: JQ1 lowers action potential genes in adult and cultured heart cells (NES -1.75 to -2.08) and SCN5A and KCNH2 in 7 of 8 comparisons, while structure markers do not fall.</p>
+ <p class="legend">Rows: genes from GO cardiac muscle cell action potential (GO:0086001) that change at adjusted p &lt; 0.05 in at least 2 comparisons, plus SCN5A and KCNH2; ordered by mean log2FC across the 8 comparisons. Columns: the 8 JQ1 versus vehicle comparisons. Colour clipped at |log2FC| = 2. Pills: fgsea normalised enrichment score of the full set per comparison (* adjusted p &lt; 0.05). Table: every measured gene in the set, all comparisons.</p>
+ <div class="ixtbl"></div>
+</div>
+<div class="ix" id="ix-f4" data-fig="f4">
+ <span class="lab">Question 4</span><h3>DCM does not lower the BRD4 mitochondrial program inside cardiomyocyte nuclei</h3><p class="q">Is the BRD4 program lost inside DCM cardiomyocytes?</p>
+ <div class="ixctl"><label>Cell type<select class="csel" aria-label="Cell type"></select></label><label>Table shows<select class="fsel" aria-label="Table shows"></select></label><label>Find a gene<input class="gq" type="text" placeholder="e.g. SCN5A" aria-label="Find a gene" autocomplete="off" spellcheck="false"></label><button class="sbtn gbtn2" type="button">Highlight</button><button class="sbtn png" type="button">Download PNG</button><span class="msg" aria-live="polite"></span></div>
+ <div class="ixstats"></div>
+ <div class="ixleg"><span><i style="background:#009E73"></i>BRD4 program genes</span><span><i style="background:#56B4E9"></i>other mitochondrial genes</span><span><i style="background:#BDBDBD"></i>other genes</span></div>
+ <div class="ixplot"><div class="ph">Interactive figure loads as you scroll</div></div>
+ <p class="take">Takeaway: in cardiomyocyte nuclei the program does not change with DCM (+0.05 SD, p = 0.75, 68 donors); in the pseudobulk, 31 of 215 program genes change at FDR &lt; 0.05 (21 down, 10 up).</p>
+ <p class="legend">Reichart et al. 2022 left ventricle single-nucleus atlas: counts summed per donor and cell type, DCM versus non-failing with edgeR (quasi-likelihood F test, FDR). Program score: per-nucleus score in a Gaussian mixed model with donor as random effect. camera: competitive gene-set test on the pseudobulk. BRD4 program: genes that fall after Brd4 deletion in mouse heart (Padmanabhan et al. 2020), mapped to human; other mitochondrial genes: MitoCarta3.0 minus the program. Dashed line: FDR = 0.05.</p>
+ <div class="ixtbl"></div>
+</div>
+<div class="ix" id="ix-f5" data-fig="f5">
+ <span class="lab">Question 5</span><h3>Once cell mix is removed, the program is slightly higher in DCM cardiomyocytes</h3><p class="q">Is the program lost once the cell mix is removed?</p>
+ <div class="ixctl"><label>Table shows<select class="fsel" aria-label="Table shows"></select></label><label>Find a gene<input class="gq" type="text" placeholder="e.g. SCN5A" aria-label="Find a gene" autocomplete="off" spellcheck="false"></label><button class="sbtn gbtn2" type="button">Highlight</button><button class="sbtn png" type="button">Download PNG</button><span class="msg" aria-live="polite"></span></div>
+ <div class="ixstats"></div>
+ <div class="ixleg"><span><i style="background:#009E73"></i>BRD4 program genes</span><span><i style="background:#56B4E9"></i>other mitochondrial genes</span><span><i style="background:#BDBDBD"></i>other genes</span></div>
+ <div class="ixplot"><div class="ph">Interactive figure loads as you scroll</div></div>
+ <p class="take">Takeaway: in deconvolved cardiomyocyte expression from 366 hearts the program is relatively higher in DCM (+0.065, p = 8.2e-4) and does not track ejection fraction (rho 0.04, p = 0.66).</p>
+ <p class="legend">MAGNet left ventricles (GSE141910, 366 hearts) deconvolved with InstaPrism (BayesPrism model) using 86 Reichart cell states as reference. Cardiomyocyte-specific expression compared DCM versus non-failing with limma-trend, adjusting for age, sex, race, RIN and library pool. These are model estimates, not measurements. Dashed line: adjusted p = 0.05.</p>
+ <div class="ixtbl"></div>
+</div>
+<div class="ix" id="ix-f6" data-fig="f6">
+ <span class="lab">Question 6</span><h3>DCM risk genes point to cardiomyocytes, but not to BRD4-high cardiomyocytes</h3><p class="q">Do DCM risk genes point to BRD4-high cells?</p>
+ <div class="ixctl"><label>Table shows<select class="fsel" aria-label="Table shows"></select></label><label>Find a gene<input class="gq" type="text" placeholder="e.g. SCN5A" aria-label="Find a gene" autocomplete="off" spellcheck="false"></label><button class="sbtn gbtn2" type="button">Highlight</button><button class="sbtn png" type="button">Download PNG</button><span class="msg" aria-live="polite"></span></div>
+ <div class="ixstats"></div>
+ <div class="ixleg"><span><i style="background:#009E73"></i>BRD4 program genes</span><span><i style="background:#D55E00"></i>scDRS top 1,000 risk genes</span><span><i style="background:#9E9E9E"></i>other genes</span></div>
+ <div class="ixplot"><div class="ph">Interactive figure loads as you scroll</div></div>
+ <p class="take">Takeaway: DCM GWAS risk genes are most active in cardiomyocytes (MC z 7.97, MC p = 0.001), but within cardiomyocytes risk is slightly lower where the BRD4 program is high (r -0.10, p = 0.014).</p>
+ <p class="legend">Gene-level DCM association from the HERMES GWAS (Zheng et al. 2024, European ancestry) with MAGMA v1.10; autosomes only. The top 1,000 genes by MAGMA z, weighted by z, form the scDRS 1.0.2 gene set, scored against 1,000 matched control sets in 60,000 nuclei from 43 donors. Dashed line: Bonferroni threshold over all genes. Labels: strongest genes past the threshold that do not overlap.</p>
+ <div class="ixtbl"></div>
+</div>
+</div></section>
+
 <section class="band alt" id="explore"><div class="wrap">
  <span class="chapter">Gene lookup</span><h2>Any program gene or electrical gene, in one place</h2>
  <p class="narrow">Type a gene. BRD4 program genes show the drop after Brd4 deletion in mouse and the change in deconvolved human DCM cardiomyocytes (366 MAGNet hearts). The 9 named electrical genes show log2 fold change with JQ1 in all 8 heart comparisons. Orange: significantly lower; blue: significantly higher (adjusted p &lt; 0.05).</p>
@@ -134,4 +210,6 @@ function show(){var s=(q.value||'').trim().toUpperCase(),h='';
 q.addEventListener('input',show);q.value='HMGCS2';show();})();
 </script>
 <script src="js/guide.js"></script><script src="js/wf.js"></script>
+<script src="js/walk.js" defer></script>
+<script src="js/interactive.js" defer></script>
 </body></html>

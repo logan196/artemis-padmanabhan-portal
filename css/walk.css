@@ -1,0 +1,35 @@
+/* Animated landing walk-through: BD1-axis bars and a six-question stepper. */
+.walk{padding:64px 0 56px;border-bottom:1px solid var(--line)}
+.walk .lede2{font-size:17px;color:var(--ink2);max-width:760px;margin:0 0 26px}
+.wgrid{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,1fr);gap:34px;align-items:start}
+.waxis{margin:0;background:#fff;border:1px solid var(--line);border-radius:14px;padding:18px 18px 12px}
+.waxis .k{font:600 11px/1.3 var(--mono);letter-spacing:.14em;color:var(--teal);text-transform:uppercase;margin:0 0 4px}
+.waxis h3{font:500 20px/1.25 var(--serif);margin:0 0 6px}
+.waxis svg{display:block;width:100%;height:auto}
+.waxis svg text{font-family:Inter,system-ui,sans-serif}
+.waxis .wb{transition:width 1.1s cubic-bezier(.2,.7,.2,1),x 1.1s cubic-bezier(.2,.7,.2,1)}
+.waxis .wv{opacity:0;transition:opacity .5s ease .6s}
+.waxis.on .wv{opacity:1}
+.waxis figcaption{font:13px/1.45 var(--sans);color:var(--dim);margin-top:6px}
+.waxis .pooled{font:600 14px/1.4 var(--sans);color:var(--teal2);margin:8px 0 0;opacity:0;transform:translateY(6px);transition:opacity .6s ease 1.4s,transform .6s ease 1.4s}
+.waxis.on .pooled{opacity:1;transform:none}
+.wsteps{position:relative}
+.wsteps ol{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:8px}
+.wsteps li{border:1px solid var(--line);border-radius:12px;background:var(--paper);padding:12px 16px;cursor:pointer;transition:background .35s ease,border-color .35s ease,box-shadow .35s ease}
+.wsteps li .n{font:600 11px/1.3 var(--mono);letter-spacing:.12em;color:var(--teal);text-transform:uppercase}
+.wsteps li .qq{font:600 16px/1.35 var(--sans);color:var(--ink);margin:2px 0 0}
+.wsteps li .aa{display:grid;grid-template-rows:0fr;transition:grid-template-rows .45s ease,opacity .45s ease;opacity:0}
+.wsteps li .aa>div{overflow:hidden;font-size:15px;color:var(--ink2);line-height:1.5}
+.wsteps li .aa a{font:600 13px var(--sans)}
+.wsteps li.on{background:#fff;border-color:var(--teal);box-shadow:0 6px 22px rgba(14,94,102,.10)}
+.wsteps li.on .aa{grid-template-rows:1fr;opacity:1}
+.wsteps li.on .aa>div{padding-top:6px}
+.wprog{height:3px;background:var(--line2);border-radius:3px;margin:12px 0 0;overflow:hidden}
+.wprog i{display:block;height:100%;width:0;background:var(--teal)}
+.wctl{display:flex;align-items:center;gap:10px;margin-top:10px;font:13px var(--sans);color:var(--dim)}
+.wctl button{font:600 13px/1 var(--sans);padding:7px 11px;border:1px solid var(--line);border-radius:8px;background:var(--paper);color:var(--ink2);cursor:pointer}
+@media (max-width:900px){.wgrid{grid-template-columns:1fr}}
+@media (prefers-reduced-motion:reduce){.waxis .wb,.waxis .wv,.waxis .pooled,.wsteps li,.wsteps li .aa{transition:none}.waxis .wv,.waxis .pooled{opacity:1;transform:none}}
+
+body.fab-off .gbtn{opacity:0;pointer-events:none;transform:translateY(12px);transition:opacity .25s ease,transform .25s ease}
+.gbtn{transition:opacity .25s ease,transform .25s ease}

@@ -229,7 +229,7 @@
     function fit() { size = logo.offsetWidth; cv.width = Math.round(size * dpr); cv.height = Math.round(size * dpr); var stage = logo.parentNode; liftY = card.offsetTop - 16 - 0.42 * size * 0.42 - stage.offsetHeight / 2; }
     fit(); W.addEventListener("resize", fit);
     var t0 = performance.now(), shown = 0, resolveAt = null, exitAt = null, ended = false, skipping = null;
-    var MIN_SPIN = 1.35, MAX_SPIN = 1.85, HOLD = 1.55, EXIT = 0.42;
+    var MIN_SPIN = 1.35, MAX_SPIN = 1.85, HOLD = 1.8, EXIT = 0.42;
     if (reduced) { MIN_SPIN = 0.9; MAX_SPIN = 1.6; }
     function done() {
       if (ended) return; ended = true;
@@ -258,8 +258,8 @@
       var r = resolveAt === null ? 0 : (t - resolveAt);
       var fill = resolveAt === null ? 0 : eio(r / 0.45);
       var move = resolveAt === null ? 0 : eio((r - 0.18) / 0.6);
-      var cardK = resolveAt === null ? 0 : eo3((r - 0.32) / 0.55);
-      var cnt = resolveAt === null ? 0 : eo3((r - 0.42) / 0.85);
+      var cardK = resolveAt === null ? 0 : eo3((r - 0.62) / 0.55);
+      var cnt = resolveAt === null ? 0 : eo3((r - 0.7) / 0.85);
       var ex = exitAt === null ? 0 : eio((t - exitAt) / EXIT);
       if (reduced) { fill = resolveAt === null ? 1 : 1; move = resolveAt === null ? 0 : 1; cardK = resolveAt === null ? 0 : 1; cnt = 1; }
       /* logo */
@@ -287,9 +287,9 @@
       card.style.opacity = String(cardK);
       card.style.visibility = cardK > 0 ? "visible" : "hidden";
       card.style.transform = "translate3d(0," + ((1 - cardK) * 22).toFixed(1) + "px,0)";
-      [kick, title, meta].forEach(function (e2, i) { var k = reduced ? cardK : eo3((r - 0.32 - i * 0.08) / 0.5); e2.style.opacity = String(k); e2.style.transform = "translate3d(0," + ((1 - k) * 12).toFixed(1) + "px,0)"; });
-      statEls.forEach(function (e2, i) { var k = reduced ? cardK : eo3((r - 0.5 - i * 0.07) / 0.45); e2.style.opacity = String(k); e2.style.transform = "translate3d(0," + ((1 - k) * 10).toFixed(1) + "px,0)"; });
-      forE.style.opacity = String(reduced ? cardK : eo3((r - 0.85) / 0.45));
+      [kick, title, meta].forEach(function (e2, i) { var k = reduced ? cardK : eo3((r - 0.62 - i * 0.08) / 0.5); e2.style.opacity = String(k); e2.style.transform = "translate3d(0," + ((1 - k) * 12).toFixed(1) + "px,0)"; });
+      statEls.forEach(function (e2, i) { var k = reduced ? cardK : eo3((r - 0.8 - i * 0.07) / 0.45); e2.style.opacity = String(k); e2.style.transform = "translate3d(0," + ((1 - k) * 10).toFixed(1) + "px,0)"; });
+      forE.style.opacity = String(reduced ? cardK : eo3((r - 1.1) / 0.45));
       counts.forEach(function (c) { if (c.p) c.n.textContent = cnt >= 1 ? c.p.orig : fmtNum(c.p, c.p.val * cnt); });
       brand.style.opacity = String((reduced ? 1 : eo3(t / 0.8)) * (1 - ex));
       /* exit: lift the paper away to reveal the hero */
