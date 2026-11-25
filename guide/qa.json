@@ -1,0 +1,134 @@
+{
+ "greeting": "Ask about BD1 and BD2, GATA4, the electrical genes, the BRD4 mitochondrial program or DCM genetics. Answers come only from the numbers computed for this portal.",
+ "fallback": "I can only answer from this portal's computed results. Try asking about BD1 vs BD2, GATA4, SCN5A, single nuclei, deconvolution, genetics or the caveats.",
+ "suggested": [
+  "What is new in version 3?",
+  "Is the heart response BD1 or BD2?",
+  "Is the mitochondrial program lost in heart failure?",
+  "Does DCM genetic risk point to BRD4?"
+ ],
+ "items": [
+  {
+   "q": "What is new in version 3?",
+   "keywords": [
+    "new",
+    "version",
+    "v3",
+    "finding",
+    "result",
+    "summary",
+    "changed"
+   ],
+   "a": "Four upgrades. Per-sample decoupleR footprints show every JQ1 heart sample moving along the BD1 axis (8 of 8) with no BD2 effect beyond BD1, and GATA4 target activity falling in 7 of 8 models. Single-nucleus statistics on 375,118 nuclei show the BRD4 program is a cardiomyocyte trait that DCM does not lower there (+0.05 SD, p = 0.75). Deconvolution of 366 hearts replaces the earlier sarcomere adjustment and finds the program relatively higher in DCM cardiomyocytes (+0.065, p = 8.2e-4). scDRS maps DCM genetic risk to cardiomyocytes (MC z 7.97) but not to the BRD4-high ones (r -0.10)."
+  },
+  {
+   "q": "Is the heart response BD1 or BD2?",
+   "keywords": [
+    "bd1",
+    "bd2",
+    "bromodomain",
+    "selective",
+    "gsk046",
+    "gsk778",
+    "ibet",
+    "mlm"
+   ],
+   "a": "BD1. Fitting BD1 and BD2 together in each sample, JQ1 raised BD1 activity over vehicle in all 8 comparisons (Welch p 8.9e-9 to 0.010; pooled Hedges g 10.7, 95% CI 6.8 to 14.6). BD2 beyond BD1 rose in 3 and fell in 5 and pooled to g -0.25 (p = 0.57). With 2 to 4 samples per arm the g values are large and wide; the direction counts carry the main weight."
+  },
+  {
+   "q": "Does JQ1 change GATA4 activity?",
+   "keywords": [
+    "gata4",
+    "collectri",
+    "tf",
+    "transcription",
+    "nfkb",
+    "rela",
+    "tnf",
+    "inflammation",
+    "progeny"
+   ],
+   "a": "Yes. CollecTRI GATA4 target activity fell with JQ1 in 7 of 8 heart comparisons (significant in 3; pooled g -1.98, p = 5.4e-4). NKX2-5 and HAND2 targets also fell; MEF2C and TBX5 did not change significantly. RELA and NFKB1 targets and the PROGENy TNF-alpha footprint fell in all 8."
+  },
+  {
+   "q": "Which electrical genes move?",
+   "keywords": [
+    "electrical",
+    "scn5a",
+    "kcnh2",
+    "channel",
+    "action",
+    "potential",
+    "conduction",
+    "ion"
+   ],
+   "a": "The GO cardiac muscle action potential set falls with JQ1 in the healthy adult mouse heart (NES -1.82), stressed human iPSC-CMs (-1.75) and rat cardiomyocytes (-1.75 to -2.08). SCN5A and KCNH2 each fall in 7 of 8 comparisons; structure markers do not fall."
+  },
+  {
+   "q": "Is the mitochondrial program lost in heart failure?",
+   "keywords": [
+    "mitochondrial",
+    "mito",
+    "signature",
+    "program",
+    "dcm",
+    "failure",
+    "nuclei",
+    "deconvolution",
+    "magnet"
+   ],
+   "a": "Not selectively. In cardiomyocyte nuclei DCM changed the program by +0.05 SD (p = 0.75) in a donor mixed model, while other mitochondrial genes fell in 5 non-muscle cell types. Milo found 469 of 1,483 cardiomyocyte neighbourhoods depleted in DCM, and depletion tracked low mitochondrial expression of every kind. In deconvolved cardiomyocyte expression of 366 hearts the program was relatively higher in DCM (+0.065, p = 8.2e-4) and did not track ejection fraction (rho 0.04, p = 0.66)."
+  },
+  {
+   "q": "Does DCM genetic risk point to BRD4?",
+   "keywords": [
+    "gwas",
+    "genetic",
+    "risk",
+    "scdrs",
+    "magma",
+    "hermes",
+    "inherited",
+    "heritability"
+   ],
+   "a": "Not specifically. scDRS with MAGMA genes from the HERMES DCM GWAS (14,256 cases) mapped risk to cardiomyocytes (MC z 7.97, MC p = 0.001; 5.6% of cardiomyocyte nuclei at FDR < 0.1). Within cardiomyocytes, risk was slightly lower where the BRD4 program was high (r -0.10, MC p = 0.014), the same as for other mitochondrial genes (r -0.10)."
+  },
+  {
+   "q": "Where in the heart do BET drug signatures act?",
+   "keywords": [
+    "drug2cell",
+    "where",
+    "cell type",
+    "dot",
+    "fibroblast",
+    "myeloid",
+    "cardiomyocyte"
+   ],
+   "a": "In the drug2cell-style dot plot, the BRD4 program and GATA4 activity sit in cardiomyocytes (61% of cardiomyocyte nuclei in the top quartile). The heart JQ1 response set peaks in fibroblasts (56%), and the leukemia-derived iBET-BD1 and pan-BET response sets peak in myeloid and lymphoid nuclei (68% to 80%)."
+  },
+  {
+   "q": "What data were used?",
+   "keywords": [
+    "data",
+    "dataset",
+    "public",
+    "geo",
+    "unpublished",
+    "source"
+   ],
+   "a": "Only public data: Anand et al. 2013 (GSE48110, GSE48111), Duan et al. 2017 (GSE96560, GSE96561), Gilan et al. 2020 (GSE138209, GSE138089), MAGNet (GSE141910), the Reichart et al. 2022 heart cell atlas (CZ CELLxGENE), the HERMES DCM GWAS (Zheng et al. 2024), MitoCarta3.0 and the lab's published 2020 Circulation supplement. No unpublished lab data were used."
+  },
+  {
+   "q": "What are the caveats?",
+   "keywords": [
+    "caveat",
+    "limitation",
+    "weak",
+    "sample",
+    "n",
+    "reference"
+   ],
+   "a": "The BD1 and BD2 reference profiles come from leukemia lines and T cells, and their weights correlate (r = 0.83). Most heart arms have n = 2 to 4. The mitochondrial signature comes from mouse day 5 knockout tables. Deconvolution used InstaPrism, a fast implementation of the BayesPrism model, and deconvolved expression is a model estimate. Per-nucleus tests used Gaussian mixed models with 68 donors as the effective sample. scDRS used 60,000 nuclei from 43 donors and a European-ancestry GWAS."
+  }
+ ]
+}
