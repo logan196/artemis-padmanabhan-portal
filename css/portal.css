@@ -136,3 +136,33 @@ html,body{overflow-x:clip}
 
 /* review fix: keep side padding on the hero (".hero" padding overrode ".wrap") */
 .wrap.hero{padding-left:28px;padding-right:28px}@media (max-width:600px){.wrap.hero{padding-left:20px;padding-right:20px}}
+
+/* Responsive polish patch 2026-11-25: balanced hero, legible hero figure, mobile nav strip.
+   Appended overrides only; no existing rules edited, no content changes. */
+@media (min-width:901px){
+  .hero{grid-template-columns:minmax(0,.92fr) minmax(0,1.08fr);min-height:0;padding:52px 0 40px;gap:32px}
+  .hero h1{font-size:clamp(28px,3.1vw,42px);line-height:1.14;max-width:22ch}
+  .hero .lede{font-size:16.5px;line-height:1.55}
+  .hero .for{margin:14px 0 18px}
+  .heroviz{height:min(72vh,620px)}
+  div.heroviz img{padding:6px}
+  .stats b{font-size:24px}
+}
+@media (max-width:900px){
+  .hero{padding:20px 0 22px;gap:18px}
+  .hero h1{font-size:clamp(25px,6.4vw,32px);line-height:1.16}
+  .hero .lede{font-size:15px;line-height:1.5}
+  .hero .for{font-size:12px;margin:10px 0 12px}
+  .heroviz{height:46vh}
+  div.heroviz img{padding:4px}
+  .stats{margin-top:18px}
+  .stats div{padding:12px 10px}
+  .stats b{font-size:20px}
+}
+@media (max-width:860px){
+  .top .in{flex-wrap:wrap;gap:6px 12px;padding:8px 16px}
+  .top nav{display:flex;order:3;flex:0 0 100%;margin-left:0;overflow-x:auto;scrollbar-width:none;padding:2px 0 6px}
+  .top nav::-webkit-scrollbar{display:none}
+  .top nav a{white-space:nowrap;padding:6px 8px;font-size:12.5px}
+  .top .btn{margin-left:auto}
+}
